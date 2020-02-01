@@ -54,6 +54,5 @@ def servo_callback(channel, msg):
 def main():
     for pin in servos:
         servo_init(pin, 0)
-
     lcm_.subscribe("/servo_cmd", servo_callback)
     
